@@ -1,0 +1,10 @@
+{
+  "sources": {
+    "logrotate_": {
+      "path": "."
+    },
+    "logrotate": {
+      "locked_version": "1.0.2"
+    }
+  }
+}
