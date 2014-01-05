@@ -25,4 +25,4 @@ logrotate_app 'chef_client' do
   options     %w(missingok compress delaycompress)
   rotate      12
   postrotate  'service chef-client reload'
-end # logrotate_app 'chef_client'
+end # logrotate_app
