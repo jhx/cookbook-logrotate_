@@ -8,13 +8,9 @@ require 'rubocop/rake_task'
 # - individual tasks are listed in alphabetical order
 
 #--------------------------------------------------------------- configuration
-begin
-  require 'emeril/rake_tasks'
-  Emeril::RakeTasks.new do |t|
-    t.config[:publish_to_community] = false
-  end # Emeril::RakeTasks.new
-rescue LoadError
-end
+Emeril::RakeTasks.new do |t|
+  t.config[:publish_to_community] = false
+end if defined?(Emeril::RakeTasks)
 
 #---------------------------------------------- automatically run by travis-ci
 task :default => [:build_ci]

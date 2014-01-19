@@ -2,7 +2,7 @@
 source 'https://rubygems.org'
 
 group :development do
-  gem 'emeril'
+  gem 'emeril', '~> 0.7.0', :require => 'emeril/rake_tasks'
 end # group
 
 group :test do
