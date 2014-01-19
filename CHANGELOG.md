@@ -4,6 +4,12 @@ CHANGELOG
 0.2.0 / 2014-01-19
 ------------------
 
+- #25
+- 58653cd1c53765118bf0864f924c7363ea50938f
+- Issue: #25
+- SHA: 58653cd1c53765118bf0864f924c7363ea50938f
+
+
 - `BREAK` #25 - require `logrotate` cookbook ~> v1.4.0
   (technically, this isn't a breaking change, but integration tests will fail with older cookbook version because we specify a non-default file mode)
 - `NEW`[#25] add integration tests (via test-kitchen/serverspec)
