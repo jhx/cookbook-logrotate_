@@ -2,6 +2,7 @@
 source 'https://rubygems.org'
 
 group :development do
+  gem 'emeril'
 end # group
 
 group :test do

@@ -1,11 +1,17 @@
 #!/usr/bin/env rake
 # coding: utf-8
 require 'bundler/setup'
+require 'emeril/rake_tasks'
 require 'rubocop/rake_task'
 
 # Style guide for this Rakefile:
 # - place default task at the beginning of the file
 # - individual tasks are listed in alphabetical order
+
+#--------------------------------------------------------------- configuration
+Emeril::RakeTasks.new do |t|
+  t.config[:publish_to_community] = false
+end # Emeril::RakeTasks.new
 
 #---------------------------------------------- automatically run by travis-ci
 task :default => [:build_ci]
