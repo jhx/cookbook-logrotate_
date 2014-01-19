@@ -10,5 +10,5 @@ group :test do
   gem 'berkshelf', '~> 2.0.10'
   gem 'chefspec', '~> 3.1.4'
   gem 'foodcritic', '~> 3.0.3'
-  gem 'rubocop', '~> 0.16.0'
+  gem 'rubocop', '~> 0.16.0', :require => 'rubocop/rake_task'
 end # group

@@ -1,7 +1,6 @@
 #!/usr/bin/env rake
 # coding: utf-8
 require 'bundler/setup'
-require 'rubocop/rake_task'
 
 # Style guide for this Rakefile:
 # - place default task at the beginning of the file
