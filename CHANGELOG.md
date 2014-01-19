@@ -4,18 +4,18 @@ CHANGELOG
 0.2.0 / 2014-01-19
 ------------------
 
-- `BREAK` [#25][] - require `logrotate` cookbook ~> v1.4.0
+- `BREAK` require `logrotate` cookbook ~> v1.4.0 | [#25][]
   (technically, this isn't a breaking change, but integration tests will fail with older cookbook version because we specify a non-default file mode)
-- `NEW` [#25][] - add integration tests (via test-kitchen/serverspec)
-- `NEW` [#8][] - add ruby lint checks (via rubocop), fix flagged items
-- `NEW` [#7][] - add unit tests (via chefspec)
-- `NEW` [#6][] - add syntax checks (via knife)
-- `NEW` [#5][] - add support for travis-ci
-- `NEW` [#3][] - add cookbook lint checks (via foodcritic), fix flagged items
-- `NEW` [#2][] - add specification files for ruby version
-- `IMPROVE` - default recipe now includes other recipe(s)
-- `IMPROVE` [#26][] - update README
-- `IMPROVE` [#22][] [#24][] - miscellaneous updates to unit specs
+- `NEW` add integration tests (via test-kitchen/serverspec) | [#25][]
+- `NEW` add ruby lint checks (via rubocop), fix flagged items | [#8][]
+- `NEW` add unit tests (via chefspec) | [#7][]
+- `NEW` add syntax checks (via knife) | [#6][]
+- `NEW` add support for travis-ci | [#5][]
+- `NEW` add cookbook lint checks (via foodcritic), fix flagged items | [#3][]
+- `NEW` add specification files for ruby version | [#2][]
+- `IMPROVE` default recipe now includes other recipe(s)
+- `IMPROVE` update README | [#26][]
+- `IMPROVE` miscellaneous updates to unit specs | [#22][] [#24][]
 
 
 0.1.0 / 2013-01-26
