@@ -3,11 +3,14 @@ require 'spec_helper'
 
 describe 'logrotate_::chef_client' do
   let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
+  let(:file) { '/etc/logrotate.d/chef_client' }
 
-  it 'should create file owned by root:root' do
-    file = '/etc/logrotate.d/chef_client'
+  it 'creates file owned by root:root' do
     expect(chef_run).to create_template(file)
       .with(:owner => 'root', :group => 'root')
+  end # it
+
+  it 'renders file with expected content' do
     expect(chef_run).to render_file(file)
       .with_content('/var/log/chef/client.log')
   end # it
