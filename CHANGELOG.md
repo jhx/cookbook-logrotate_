@@ -5,7 +5,9 @@ CHANGELOG
 ------------------
 
 - `BREAK` require `logrotate` cookbook ~> v1.4.0 | [#25][]
-  (technically, this isn't a breaking change, but integration tests will fail with older cookbook version because we specify a non-default file mode)
+
+    (technically, this isn't a breaking change, but integration tests will fail with older cookbook version because we specify a non-default file mode)
+
 - `NEW` add integration tests (via test-kitchen/serverspec) | [#25][]
 - `NEW` add ruby lint checks (via rubocop), fix flagged items | [#8][]
 - `NEW` add unit tests (via chefspec) | [#7][]
