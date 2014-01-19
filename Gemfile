@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 group :development do
   gem 'emeril', '~> 0.7.0', :require => 'emeril/rake_tasks'
+  gem 'pimpmychangelog', '~> 0.1.2'
 end # group
 
 group :test do
