@@ -7,4 +7,4 @@ description       'Configures logrotate for additional applications'
 
 version           '0.1.0'
 
-depends           'logrotate'
+depends           'logrotate', '~> 1.4.0'
