@@ -1,7 +1,6 @@
 #!/usr/bin/env rake
 # coding: utf-8
 require 'bundler/setup'
-require 'emeril/rake_tasks'
 require 'rubocop/rake_task'
 
 # Style guide for this Rakefile:
@@ -9,9 +8,13 @@ require 'rubocop/rake_task'
 # - individual tasks are listed in alphabetical order
 
 #--------------------------------------------------------------- configuration
-Emeril::RakeTasks.new do |t|
-  t.config[:publish_to_community] = false
-end # Emeril::RakeTasks.new
+begin
+  require 'emeril/rake_tasks'
+  Emeril::RakeTasks.new do |t|
+    t.config[:publish_to_community] = false
+  end # Emeril::RakeTasks.new
+rescue LoadError
+end
 
 #---------------------------------------------- automatically run by travis-ci
 task :default => [:build_ci]
