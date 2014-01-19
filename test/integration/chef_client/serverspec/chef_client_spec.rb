@@ -27,6 +27,10 @@ describe 'logrotate_::chef_client' do
       expect(subject.content).to match('weekly')
     end # it
 
+    it 'matches expected rotate period' do
+      expect(subject.content).to match('rotate 12')
+    end # it
+
     it 'matches expected options (missingok)' do
       expect(subject.content).to match('missingok')
     end # it
@@ -37,10 +41,6 @@ describe 'logrotate_::chef_client' do
 
     it 'matches expected options (delaycompress)' do
       expect(subject.content).to match('delaycompress')
-    end # it
-
-    it 'matches expected rotate period' do
-      expect(subject.content).to match('rotate 12')
     end # it
 
     it 'matches expected postrotate command' do

@@ -24,7 +24,7 @@ logrotate_app 'chef_client' do
   template_mode '0644'
   path          '/var/log/chef/client.log'
   frequency     'weekly'
-  options       %w(missingok compress delaycompress)
   rotate        12
+  options       %w(missingok compress delaycompress)
   postrotate    'service chef-client reload'
 end # logrotate_app
