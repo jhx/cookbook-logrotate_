@@ -20,10 +20,11 @@
 
 # create configuration file in /etc/logrotate.d/
 logrotate_app 'chef_client' do
-  cookbook    'logrotate'
-  path        '/var/log/chef/client.log'
-  frequency   'weekly'
-  options     %w(missingok compress delaycompress)
-  rotate      12
-  postrotate  'service chef-client reload'
+  cookbook      'logrotate'
+  template_mode '0644'
+  path          '/var/log/chef/client.log'
+  frequency     'weekly'
+  rotate        12
+  options       %w(missingok compress delaycompress)
+  postrotate    'service chef-client reload'
 end # logrotate_app
