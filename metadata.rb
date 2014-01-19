@@ -5,6 +5,6 @@ maintainer_email  'doc.walker@jameshardie.com'
 license           'Apache 2.0'
 description       'Configures logrotate for additional applications'
 
-version           '0.1.0'
+version           '0.2.0'
 
 depends           'logrotate', '~> 1.4.0'
