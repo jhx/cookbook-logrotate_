@@ -27,7 +27,7 @@ platforms:
       box: opscode-centos-6.5-chef-11.8.2
 
 suites:
-  - name: chef_client
+  - name: default
     run_list:
-      - 'recipe[logrotate_::chef_client]'
+      - 'recipe[logrotate_]'
     attributes: {}
