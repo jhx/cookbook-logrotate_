@@ -67,14 +67,14 @@ Below is the structure of the `spec` and `test` directories:
 ├── spec                                # unit tests
 │   ├── chef
 │   │   └── knife.rb                    # knife configuration
-│   ├── *_spec.rb                       # recipe specs
+│   ├── *_spec.rb                       # recipe specs (match recipe name)
 │   ├── foodcritic                      # custom foodcritic rules
 │   └── spec_helper.rb
 └── test
     └── integration                     # integration tests
-        ├── logrotate_                  # suite (based on cookbook)
+        ├── logrotate_                  # suite (match cookbook name)
         │   └── serverspec              # busser
-        │       └── *_spec.rb           # suite specs (based on recipe)
+        │       └── *_spec.rb           # suite specs (match recipe name)
         └── helpers
             └── serverspec
                 └── spec_helper.rb
