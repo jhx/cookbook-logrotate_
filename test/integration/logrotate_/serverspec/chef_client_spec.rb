@@ -19,32 +19,32 @@ describe 'logrotate_::chef_client' do
       expect(subject).to be_mode(644)
     end # it
 
-    it 'matches expected path' do
-      expect(subject.content).to match('/var/log/chef/client.log')
+    it 'includes expected path' do
+      expect(subject.content).to include('/var/log/chef/client.log')
     end # it
 
-    it 'matches expected frequency' do
-      expect(subject.content).to match('weekly')
+    it 'includes expected frequency' do
+      expect(subject.content).to include('weekly')
     end # it
 
-    it 'matches expected rotate period' do
-      expect(subject.content).to match('rotate 12')
+    it 'includes expected rotate period' do
+      expect(subject.content).to include('rotate 12')
     end # it
 
-    it 'matches expected options (missingok)' do
-      expect(subject.content).to match('missingok')
+    it 'includes expected options (missingok)' do
+      expect(subject.content).to include('missingok')
     end # it
 
-    it 'matches expected options (compress)' do
-      expect(subject.content).to match('compress')
+    it 'includes expected options (compress)' do
+      expect(subject.content).to include('compress')
     end # it
 
-    it 'matches expected options (delaycompress)' do
-      expect(subject.content).to match('delaycompress')
+    it 'includes expected options (delaycompress)' do
+      expect(subject.content).to include('delaycompress')
     end # it
 
-    it 'matches expected postrotate command' do
-      expect(subject.content).to match('service chef-client reload')
+    it 'includes expected postrotate command' do
+      expect(subject.content).to include('service chef-client reload')
     end # it
   end # describe
 
