@@ -2,7 +2,7 @@
 require 'spec_helper'
 
 describe 'logrotate_::chef_client' do
-  context file('/etc/logrotate.d/chef_client') do
+  describe file('/etc/logrotate.d/chef_client') do
     it 'is file' do
       expect(subject).to be_file
     end # it
@@ -46,6 +46,6 @@ describe 'logrotate_::chef_client' do
     it 'matches expected postrotate command' do
       expect(subject.content).to match('service chef-client reload')
     end # it
-  end # context
+  end # describe
 
 end # describe
