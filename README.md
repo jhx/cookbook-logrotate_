@@ -1,6 +1,7 @@
 logrotate_ Cookbook
 ===================
 [![Build Status](https://travis-ci.org/jhx/cookbook-logrotate_.png?branch=master)](https://travis-ci.org/jhx/cookbook-logrotate_)
+[![Dependency Status](https://gemnasium.com/jhx/cookbook-logrotate_.png)](https://gemnasium.com/jhx/cookbook-logrotate_)
 
 Installs and configures logrotate.
 
