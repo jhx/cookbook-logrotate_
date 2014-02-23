@@ -27,7 +27,7 @@ describe 'logrotate_::chef_client' do
       expect(subject.content).to include('weekly')
     end # it
 
-    it 'includes expected rotate period' do
+    it 'includes expected rotate limit' do
       expect(subject.content).to include('rotate 12')
     end # it
 
