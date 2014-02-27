@@ -3,7 +3,7 @@ require 'spec_helper'
 
 describe 'logrotate_::chef_client' do
   describe file('/etc/logrotate.d/chef_client') do
-    it 'is file' do
+    it 'is a file' do
       expect(subject).to be_file
     end # it
 
