@@ -11,7 +11,7 @@ Requirements
 ### Cookbooks
 The following cookbook is a direct dependency because it's used for common "default" functionality.
 
-- `logrotate`
+- [`logrotate`](http://github.com/opscode-cookbooks/logrotate)
 
 ### Platforms
 The following platforms are supported and tested under Test Kitchen:
